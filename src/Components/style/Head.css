@@ -1,0 +1,27 @@
+.main {
+    display: grid;
+    place-items: center;
+}
+
+.main h2 {
+    font-size: 2rem;
+}
+
+.image {
+    filter: invert(1);
+    height: 5rem;
+}
+
+.text {
+    font-weight: bolder;
+    color: var(--main);
+    text-shadow: 2px 2px 5px lightgray;
+}
+
+.head {
+    background-color: #f3f3ed;
+}
+
+.apply {
+    background: var(--complementary) !important;
+}

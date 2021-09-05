@@ -1,0 +1,13 @@
+.Header {
+    background: var(--complementary);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+    color: var(--accent);
+}
+
+small {
+    padding-right: 25px;
+    font-size: 13px;
+}

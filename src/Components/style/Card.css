@@ -1,0 +1,18 @@
+.card:hover {
+    box-shadow: 4px 4px 5px lightgray, -4px -4px 5px lightgray;
+}
+
+.card {
+    min-height: 400px !important;
+    background: var(--complementary);
+}
+
+.title {
+    color: var(--accent) !important;
+    font-weight: 500;
+}
+
+.card-text {
+    color: var(--secondary) !important;
+    font-size: 14px;
+}

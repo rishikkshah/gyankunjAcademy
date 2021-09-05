@@ -1,0 +1,31 @@
+.contact_head {
+    color: var(--main);
+}
+
+.wrapper__container {
+    display: grid;
+    place-items: center;
+}
+
+.wrapper>h2 {
+    color: var(--main);
+}
+
+.wrapper>h6 {
+    font-weight: 400;
+    color: gray;
+}
+
+.wrapper>ul {
+    margin-top: 30px;
+}
+
+.wrapper>ul>li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.direction {
+    color: var(--main);
+}

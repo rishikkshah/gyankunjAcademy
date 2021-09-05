@@ -1,0 +1,22 @@
+.banner {
+    width: 100%;
+    padding: 0px;
+    transition: all 1s ease-out;
+}
+
+.banner>img {
+    width: 100%;
+    border-radius: 30px;
+    transition: all 1s ease-out;
+}
+
+@media screen and (max-width:750px) {
+    .banner {
+        width: 100% !important;
+        margin: 0px !important;
+    }
+    .banner>img {
+        border-radius: 0px;
+        background-size: cover;
+    }
+}

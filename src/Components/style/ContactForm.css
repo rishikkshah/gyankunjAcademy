@@ -1,0 +1,16 @@
+.form {
+    border-radius: 5px;
+    box-shadow: 4px 4px 5px lightgray, -2px -2px 5px lightgray;
+}
+
+.contact__submit {
+    background: var(--complementary);
+    box-shadow: 2px 2px 5px lightgray;
+    color: white;
+}
+
+@media screen and (max-width:"460px") {
+    .form {
+        padding: 0;
+    }
+}

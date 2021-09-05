@@ -1,0 +1,7 @@
+.spec {
+    color: var(--main);
+}
+
+.spec>h2 {
+    text-shadow: 4px 4px 5px lightgray;
+}
