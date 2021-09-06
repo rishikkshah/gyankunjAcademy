@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const PublishNotice = () => {
@@ -8,17 +8,6 @@ const PublishNotice = () => {
     refno: "",
     date: "",
   });
-  const style = {
-    // height: "35px",
-    border: "1px solid black",
-    boxShadow: "2px 5px 10px #efefef",
-    listStyleType: "none",
-    marginBottom: "25px",
-    padding: "0px 15px",
-    borderRadius: "15px",
-    // overflow: "hidden",
-    // cursor: "pointer",
-  };
   const handleChange = (e) => {
     setData({
       ...data,
