@@ -32,6 +32,7 @@ const Notice = () => {
     // })
     fetch(`https://gyankunjserver.herokuapp.com/showNotice/${id}`, {
       method: "GET",
+      mode: "no-cors",
       headers: {
         "Content-Type": "application/pdf",
       },
