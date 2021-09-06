@@ -17,7 +17,7 @@ const Notice = () => {
   };
   useEffect(() => {
     axios
-      .get("https://gyankunjserver.herokuapp.com/notice", {
+      .get("/notices", {
         headers: {
           "Access-Control-Allow-Origin": true,
         },
@@ -33,7 +33,7 @@ const Notice = () => {
     //     id: id,
     //   },
     // })
-    fetch(`https://gyankunjserver.herokuapp.com/showNotice/${id}`, {
+    fetch(`/showNotice/${id}`, {
       method: "GET",
       mode: "no-cors",
       headers: {

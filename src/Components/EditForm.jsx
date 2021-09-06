@@ -1,4 +1,4 @@
-import react, { useState } from "react";
+import { useState } from "react";
 import axios from "axios";
 
 const EditForm = ({ title, body, refno, date, id }) => {
@@ -19,7 +19,7 @@ const EditForm = ({ title, body, refno, date, id }) => {
 
   const updateNotice = (data) => {
     axios
-      .post("https://gyankunjserver.herokuapp.com/updateNotice", data)
+      .post("/updateNotice", data)
       .then((res) => console.log(res))
       .catch((e) => console.log(e));
   };

@@ -1,9 +1,7 @@
 import React from "react";
 import "./App.css";
 import { Switch, Route } from "react-router-dom";
-import Header from "./Components/Header";
 import Navbar from "./Components/Navbar";
-import Map from "./Components/Map";
 import Home from "./Components/Home";
 import About from "./Components/About";
 import Admission from "./Components/Admission";

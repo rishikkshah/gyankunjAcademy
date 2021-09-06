@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import EditForm from "./EditForm";
 import PublishNotice from "./PublishNotice";
 const axios = require("axios");
@@ -34,7 +34,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get("https://gyankunjserver.herokuapp.com/notice")
+      .get("/notices")
       .then((res) => setNotices(res.data))
       .catch((e) => console.log(e));
   }, []);
