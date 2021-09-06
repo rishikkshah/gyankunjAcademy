@@ -28,7 +28,7 @@ const PublishNotice = () => {
 
   const postNotice = (data) => {
     axios
-      .post("http://localhost:9000/postNotice", data)
+      .post("https://gyankunjserver.herokuapp.com/postNotice", data)
       .then((res) => console.log(res))
       .catch((e) => console.log(e));
   };

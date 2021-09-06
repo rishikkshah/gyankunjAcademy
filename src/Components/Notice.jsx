@@ -31,7 +31,7 @@ const Notice = () => {
     //     id: id,
     //   },
     // })
-    fetch(`http://localhost:9000/showNotice/${id}`, {
+    fetch(`https://gyankunjserver.herokuapp.com/showNotice/${id}`, {
       method: "GET",
       headers: {
         "Content-Type": "application/pdf",

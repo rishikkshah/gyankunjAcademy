@@ -19,7 +19,7 @@ const EditForm = ({ title, body, refno, date, id }) => {
 
   const updateNotice = (data) => {
     axios
-      .post("http://localhost:9000/updateNotice", data)
+      .post("https://gyankunjserver.herokuapp.com/updateNotice", data)
       .then((res) => console.log(res))
       .catch((e) => console.log(e));
   };

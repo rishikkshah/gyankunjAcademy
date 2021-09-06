@@ -34,7 +34,7 @@ const Admin = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/notice")
+      .get("https://gyankunjserver.herokuapp.com/notice")
       .then((res) => setNotices(res.data))
       .catch((e) => console.log(e));
   }, []);
