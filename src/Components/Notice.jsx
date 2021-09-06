@@ -18,7 +18,7 @@ const Notice = () => {
 
   useEffect(() => {
     axios
-      .get("http://localhost:9000/notice")
+      .get("https://gyankunjserver.herokuapp.com/notice")
       .then((res) => setNotices(res.data))
       .then(() => console.log(notices))
       .catch((e) => console.log(e));
