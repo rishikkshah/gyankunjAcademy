@@ -20,7 +20,6 @@ const Notice = () => {
     axios
       .get("https://gyankunjserver.herokuapp.com/notice")
       .then((res) => setNotices(res.data))
-      .then(() => console.log(notices))
       .catch((e) => console.log(e));
   }, []);
 
@@ -49,12 +48,8 @@ const Notice = () => {
     <div>
       <h3>Gyankunj Academy Notices</h3>
       <ul>
-        {notices.map((notice) => (
-          <li
-            key={notice.id}
-            onClick={() => showNotice(notice._id)}
-            style={style}
-          >
+        {notices.map((notice, _id) => (
+          <li key={_id} onClick={() => showNotice(notice._id)} style={style}>
             {notice.title}
           </li>
         ))}
