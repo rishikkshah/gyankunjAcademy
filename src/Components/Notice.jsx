@@ -37,12 +37,12 @@ const Notice = () => {
         "Content-Type": "application/pdf",
       },
     }).then(async (res) => {
-      const blob = await res.blob();
-      const file = new Blob([blob], { type: "application/pdf" });
+      // const blob = await res.blob();
+      // const file = new Blob([blob], { type: "application/pdf" });
       //Build a URL from the file
-      const fileURL = URL.createObjectURL(file);
+      // const fileURL = URL.createObjectURL(file);
       //Open the URL on new Window
-      window.open(fileURL);
+      window.open(res);
     });
   };
   return (
