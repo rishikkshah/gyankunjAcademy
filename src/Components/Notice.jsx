@@ -15,10 +15,13 @@ const Notice = () => {
     overflow: "hidden",
     cursor: "pointer",
   };
-
   useEffect(() => {
     axios
-      .get("https://gyankunjserver.herokuapp.com/notice")
+      .get("https://gyankunjserver.herokuapp.com/notice", {
+        headers: {
+          "Access-Control-Allow-Origin": true,
+        },
+      })
       .then((res) => setNotices(res.data))
       .catch((e) => console.log(e));
   }, []);

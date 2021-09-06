@@ -1,6 +1,5 @@
 {
   "name": "client",
-  "homepage": "https://rishikkshah.github.io/gyankunjAcademy",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
