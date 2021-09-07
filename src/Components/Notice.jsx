@@ -43,7 +43,7 @@ const Notice = () => {
       const blob = await res.blob();
       const file = new Blob([blob], { type: "application/pdf" });
       //Build a URL from the file
-      const fileURL = URL.createObjectURL(file);
+      const fileURL = await URL.createObjectURL(file);
       //Open the URL on new Window
       window.open(fileURL);
     });
